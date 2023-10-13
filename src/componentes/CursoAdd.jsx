@@ -12,8 +12,9 @@ function CursoAdd(){
 					<input type='text' name='nombre-curso' id='nombre-curso' />
 				</p>
 				<p> Área: 
-					<select name='area-curso' id='area-curso'>
-						<option value='seguridad' selected>Seguridad Industrial</option>
+					<select name='area-curso' id='area-curso' defaultValue={'DEFAULT'}>
+						<option value='DEFAULT' disabled>Seleccionar área</option>
+						<option value='seguridad'>Seguridad Industrial</option>
 						<option value='ambiental'>Ambiental</option>
 						<option value='medico'>Servicio Médico</option>
 						<option value='rh'>Recursos Humanos</option>
