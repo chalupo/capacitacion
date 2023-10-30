@@ -1,8 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../css/Tabla.css';
 
 function Tabla() {
     return (
+      <>
+        <Link to="curso">Ir al curso </Link>
+        <Link to="examen">Ir al examen </Link>
+        <Link to="admin">Admin</Link>
         <div className="tabla">
         <h1>Título Página</h1>
         <table>
@@ -48,6 +53,7 @@ function Tabla() {
           </tbody>
         </table>
       </div>
+      </>
     );
 }
 

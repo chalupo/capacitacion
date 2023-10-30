@@ -1,8 +1,6 @@
-import logo from './logo.svg';
+import { Routes, Route } from "react-router-dom"
 import './App.css';
-import ListaCursos from './componentes/ListaCursos';
-import Navegacion from './componentes/Navegacion';
-import CursoAdd from './componentes/CursoAdd';
+import Admin from './componentes/Admin';
 import Tabla from './componentes/Tabla';
 import Video from './componentes/Video';
 import Cuestionario from './componentes/Cuestionario';
@@ -10,14 +8,14 @@ import Cuestionario from './componentes/Cuestionario';
 function App() {
   return (
     <>
-    <Navegacion/>
       <div className="App">
         <div className='contenedor-principal'>
-          <ListaCursos/>
-          <CursoAdd/>
-          {/* <Tabla/>
-          <Video/>
-          <Cuestionario/> */}
+          <Routes>
+            <Route path="/" element={ <Tabla /> } />
+            <Route path="curso" element={ <Video /> } />
+            <Route path="examen" element={ <Cuestionario /> } />
+            <Route path="admin" element={ <Admin /> } />
+          </Routes>
         </div>
       </div>
     </>
