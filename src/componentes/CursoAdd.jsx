@@ -23,7 +23,7 @@ function CursoAdd(){
 				<p className='archivo'>Selecciona una imagen:
 					<input type='file' name='img' />
 				</p>
-				<button name='subir'>Añadir Curso</button>
+				<button name='subir' className="subir">Añadir Curso</button>
 			</form>
 		</div>
 		</>

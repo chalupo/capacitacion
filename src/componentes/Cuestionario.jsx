@@ -35,18 +35,18 @@ function Cuestionario() {
       <h1>Título de la Página</h1>
       <p>Límite de Tiempo: {Math.floor(time / 60)}:{(time % 60).toLocaleString('en-US', { minimumIntegerDigits: 2 })}</p>
       <p>{question}</p>
-      <ul>
+      <ul className="respuestas">
         {answers.map((answer, index) => (
           <li
             key={index}
-            className={selectedAnswer === index ? 'selected' : ''}
+            className={selectedAnswer === index ? 'selected' : 'respuesta'}
             onClick={() => setSelectedAnswer(index)}
           >
             {answer}
           </li>
         ))}
       </ul>
-      <button onClick={handleSubmitAnswer}>Enviar Respuesta</button>
+      <button onClick={handleSubmitAnswer} className="responder">Enviar Respuesta</button>
       {submittedAnswer !== null && (
         <p className="response">Tu respuesta fue: {answers[submittedAnswer]}</p>
       )}

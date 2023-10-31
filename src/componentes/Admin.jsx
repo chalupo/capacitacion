@@ -1,13 +1,18 @@
 import ListaCursos from './ListaCursos';
-import Navegacion from './Navegacion';
 import CursoAdd from './CursoAdd';
+import Navegacion from './Navegacion';
+import '../css/Admin.css';
 
 function Admin() {
 	return(
 		<>
-			{/*<Navegacion/>*/}
-        	<ListaCursos/>
-          <CursoAdd/>
+			<Navegacion/>
+			<div className="contenedor">
+				<div className="contenedor-principal">
+        			<ListaCursos/>
+          		<CursoAdd/>
+				</div>
+			</div>
 		</>
 	);
 }

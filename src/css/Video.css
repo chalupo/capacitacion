@@ -54,7 +54,7 @@
     resize: none;
   }
   
-  button {
+  .boton-ir-examen {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -64,7 +64,7 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .boton-ir-examen:hover {
     background-color: #0056b3;
   }
   

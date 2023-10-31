@@ -22,14 +22,15 @@
   }
   
   /* Estilos para las respuestas */
-  ul {
+  .respuestas {
+    background-color: black;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     margin: 1rem;
   }
   
-  li {
+  .respuesta {
     color: white;
     font-size: 18px;
     margin: 5px 0;
@@ -37,7 +38,7 @@
     transition: background-color 0.2s;
   }
   
-  li:hover {
+  .respuesta:hover {
     background-color: gray;
   }
   
@@ -47,7 +48,7 @@
   }
   
   /* Estilos para el botón */
-  button {
+  .responder {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -58,7 +59,7 @@
     margin: 20px 0;
   }
   
-  button:hover {
+  .responder:hover {
     background-color: #0056b3;
   }
   

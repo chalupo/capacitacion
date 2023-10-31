@@ -37,7 +37,7 @@ function Video() {
               value={popupText}
               onChange={(e) => setPopupText(e.target.value)}
             />
-            <button onClick={handlePopupSubmit}>Subir Información</button>
+            <button onClick={handlePopupSubmit} className="boton-ir-examen">Ir al examen</button>
           </div>
         )}
       </div>

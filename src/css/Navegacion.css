@@ -3,17 +3,17 @@
 	padding: 0;
 }
 
-ul {
+.menu ul {
 	list-style-type: none;
 	overflow: hidden;
 	background-color: #333;
 }
 
-li { 
+.menu ul li { 
 	float: left;
 }
 
-li a {
+.menu ul li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -21,11 +21,11 @@ li a {
 	text-decoration: none;
 }
 
-li:last-child {
+.menu ul li:last-child {
 	float: right;
 }
 
-li a:hover{
+.menu ul li a:hover{
 	background-color: #111;
 }
 
