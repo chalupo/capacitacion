@@ -3,12 +3,8 @@
     font-family: Arial, sans-serif;
   }
   
-  table {
+  .table {
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     border-collapse: collapse;
-  }
-  
-  h1 {
-    font-size: 24px;
   }
