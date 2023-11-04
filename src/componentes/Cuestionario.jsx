@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import '../css/Cuestionario.css';
 
 function Cuestionario() {
   const [time, setTime] = useState(300); // 300 segundos = 5 minutos
-  const [question, setQuestion] = useState('Agrega la pregunta');
+  const [question, setQuestion] = useState("Es el hecho de darse cuenta de un problema o de un asunto, tras haber meditado sobre ello: ");
   const [answers, setAnswers] = useState([
-    'a) Agrega respuesta', 
-    'b) Agrega respuesta', 
-    'c) Agrega respuesta', 
-    'd) Agrega respuesta']);
+    'a) Toma de conciencia de seguridad', 
+    'b) Toma de conciencia', 
+    'c) Toma de Decisiones',]);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [submittedAnswer, setSubmittedAnswer] = useState(null);
 
@@ -31,10 +31,22 @@ function Cuestionario() {
   };
 
   return (
+    <>
+    <nav className="menu-user">
+        <ul>
+          <li><img 
+              className='logo' 
+              src={require(`../img/logo.png`)} 
+              alt='Logotipo' /></li>
+          <li><Link to="../curso">Ir al curso </Link></li>
+          <li><Link to="../examen">Ir al examen </Link></li>
+          <li><Link to="../admin">Admin</Link></li>
+        </ul>
+      </nav>
     <div className="Cuestionario">
-      <h1>Título de la Página</h1>
-      <p>Límite de Tiempo: {Math.floor(time / 60)}:{(time % 60).toLocaleString('en-US', { minimumIntegerDigits: 2 })}</p>
-      <p>{question}</p>
+      <h1>Examen del curso: "Toma de conciencia"</h1>
+      <p className="tiempo">Tiempo Restante: {Math.floor(time / 60)}:{(time % 60).toLocaleString('en-US', { minimumIntegerDigits: 2 })}</p>
+      <h5>{question}</h5>
       <ul className="respuestas">
         {answers.map((answer, index) => (
           <li
@@ -48,9 +60,10 @@ function Cuestionario() {
       </ul>
       <button onClick={handleSubmitAnswer} className="responder">Enviar Respuesta</button>
       {submittedAnswer !== null && (
-        <p className="response">Tu respuesta fue: {answers[submittedAnswer]}</p>
+        <h4 className="response">Tu respuesta fue: {answers[submittedAnswer]}</h4>
       )}
     </div>
+    </>
   );
 }
 

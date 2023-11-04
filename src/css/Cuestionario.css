@@ -2,71 +2,86 @@
 .Cuestionario {
     text-align: center;
     font-family: Arial, sans-serif;
+    
   }
   
   h1 {
     font-size: 24px;
     margin: 20px 0;
+    font-weight: 600;
   }
   
   /* Estilos para el temporizador */
-  p {
-    font-size: 16px;
-    color: #333;
+  .tiempo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #bd1a1a;
+    text-align: right;
+    margin: 50px 100px;
+   
+  
+   
   }
   
   /* Estilos para la pregunta */
-  p {
+  h5 {
     font-size: 18px;
-    margin: 20px 0;
+    margin: 50px 0;
   }
   
   /* Estilos para las respuestas */
   .respuestas {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    margin: 1rem;
+    text-align: center;
+    width: 450px;
+    height: 120px;
+    border: 5px solid rgb(18, 13, 89);
+    margin-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 25px;
+    
+   
   }
   
   .respuesta {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 18px;
     margin: 5px 0;
     cursor: pointer;
     transition: background-color 0.2s;
+    
   }
   
   .respuesta:hover {
-    background-color: gray;
+    background-color: rgb(218, 205, 216);
   }
   
   .selected {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #100940;
+    color: #ffffff;
   }
   
   /* Estilos para el botón */
   .responder {
-    background-color: #007bff;
+    background-color: rgb(54, 74, 224);
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 50px;
+    
   }
   
   .responder:hover {
-    background-color: #0056b3;
+    background-color: #0b0b0b;
+    color: aliceblue;
   }
   
   /* Estilos para la respuesta enviada */
   .response {
     font-size: 18px;
     margin: 10px 0;
-    color: #007bff;
+    color: #4b76a4;
+    
   }
-  
