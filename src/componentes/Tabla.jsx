@@ -5,8 +5,12 @@ import '../css/Tabla.css';
 function Tabla() {
     return (
       <>
-      <nav className="menu">
+      <nav className="menu-user">
         <ul>
+          <li><img 
+              className='logo' 
+              src={require(`../img/logo.png`)} 
+              alt='Logotipo' /></li>
           <li><Link to="curso">Ir al curso </Link></li>
           <li><Link to="examen">Ir al examen </Link></li>
           <li><Link to="admin">Admin</Link></li>

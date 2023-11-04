@@ -8,3 +8,40 @@
     margin: 10px auto;
     border-collapse: collapse;
   }
+
+.menu-user{
+  margin: 0;
+  padding: 0;
+}
+
+.menu-user ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #EFCA08;
+}
+
+.menu-user ul li { 
+  float: right;
+}
+
+.menu-user ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-user ul li:first-child {
+  float: left;
+}
+
+.menu-user ul li a:hover{
+  background-color: #F08700;
+}
+
+.logo {
+  padding: 5px;
+  height: 54px;
+  width: 85px;
+}
